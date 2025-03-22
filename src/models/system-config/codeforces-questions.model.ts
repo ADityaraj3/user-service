@@ -35,6 +35,7 @@ export class CodeforcesQuestionModel extends Model {
 
   @Column({
     type: DataType.STRING,
+    unique: true,
   })
   slug: string;
 
