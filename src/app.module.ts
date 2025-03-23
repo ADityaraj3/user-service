@@ -22,7 +22,11 @@ import { UniversityModel } from './models/system-config/universities.model';
       username: process.env.db_username,
       password: process.env.db_password,
       database: process.env.db_name,
-      dialectOptions: {},
+      dialectOptions: {
+        ssl: {
+          require: true,
+        }
+      },
       // models: [__dirname + '/models/**/*{model.ts,model.js}'],
       // models: [__dirname + '/models/master/*{model.ts,model.js}'],
       models: [
