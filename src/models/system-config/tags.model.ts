@@ -52,3 +52,14 @@ export class TagModel extends Model {
   })
   updated_at: Date;
 }
+
+export interface ITagModel {
+  tag_id: number;
+  name: string;
+  slug: string;
+  created_by: number;
+  updated_by: number;
+  created_at: Date;
+  updated_at: Date;
+}
+
